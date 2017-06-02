@@ -4,7 +4,7 @@ RSpec.describe PUUID::Layer do
   describe ".beneficiary" do
     it "returns predictable uuids" do
       expect(
-        PUUID::Layer.beneficiary("beneficiary-id"),
+        PUUID::Layer.beneficiary("beneficiary-id")
       ).to eql("b7d3ef11-3020-534c-9432-21939fb0c9e3")
     end
 
@@ -19,7 +19,7 @@ RSpec.describe PUUID::Layer do
   describe ".campaign_p2p" do
     it "returns predictable uuids" do
       expect(
-        PUUID::Layer.campaign_p2p("campaign-id"),
+        PUUID::Layer.campaign_p2p("campaign-id")
       ).to eql("1f3f2c66-88cb-5000-a6e9-7cdc56799a43")
     end
 
@@ -34,7 +34,7 @@ RSpec.describe PUUID::Layer do
   describe ".direct_donation" do
     it "returns predictable uuids" do
       expect(
-        PUUID::Layer.direct_donation("beneficiary-id"),
+        PUUID::Layer.direct_donation("beneficiary-id")
       ).to eql("42d16c9c-37fa-57cb-877a-3badfffab740")
     end
 
@@ -49,7 +49,7 @@ RSpec.describe PUUID::Layer do
   describe ".recurring_donation" do
     it "returns predictable uuids" do
       expect(
-        PUUID::Layer.recurring_donation("beneficiary-id"),
+        PUUID::Layer.recurring_donation("beneficiary-id")
       ).to eql("e98bfc0b-860c-5cbf-a2f2-7ef16466dbff")
     end
 
@@ -64,7 +64,7 @@ RSpec.describe PUUID::Layer do
   describe ".appeal" do
     it "returns predictable uuids" do
       expect(
-        PUUID::Layer.appeal("campaign-id"),
+        PUUID::Layer.appeal("campaign-id")
       ).to eql("337510fa-9426-5737-b93c-921791426039")
     end
 
@@ -79,7 +79,7 @@ RSpec.describe PUUID::Layer do
   describe ".beneficiary_campaign_participation" do
     it "returns predictable uuids" do
       expect(
-        PUUID::Layer.beneficiary_campaign_participation("campaign-id", "beneficiary-id"),
+        PUUID::Layer.beneficiary_campaign_participation("campaign-id", "beneficiary-id")
       ).to eql("97bf0d02-b4d6-593e-8e7e-24e20ee3594a")
     end
 

@@ -1,0 +1,38 @@
+---
+version: "2"
+services:
+  ruby24:
+    image: "ruby:2.4"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    entrypoint: "/usr/src/app/docker-entrypoint.sh"
+    command: "rspec"
+  ruby23:
+    image: "ruby:2.3"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    entrypoint: "/usr/src/app/docker-entrypoint.sh"
+    command: "rspec"
+  ruby22:
+    image: "ruby:2.2"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    entrypoint: "/usr/src/app/docker-entrypoint.sh"
+    command: "rspec"
+  ruby21:
+    image: "ruby:2.1"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    entrypoint: "/usr/src/app/docker-entrypoint.sh"
+    command: "rspec"
+  ree187:
+    image: "everydayhero/ruby-ree"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    entrypoint: "/usr/src/app/docker-entrypoint.sh"
+    command: "rspec"

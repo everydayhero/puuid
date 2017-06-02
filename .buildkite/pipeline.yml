@@ -1,0 +1,16 @@
+---
+steps:
+  - name: ":ruby: 2.4"
+    command: "docker-compose run ruby24"
+
+  - name: ":ruby: 2.3"
+    command: "docker-compose run ruby23"
+
+  - name: ":ruby: 2.2"
+    command: "docker-compose run ruby22"
+
+  - name: ":ruby: 2.1"
+    command: "docker-compose run ruby21"
+
+  - name: ":ruby: 1.8.7"
+    command: "docker-compose run ree187"
