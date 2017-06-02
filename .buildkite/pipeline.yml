@@ -14,3 +14,9 @@ steps:
 
   - name: ":ruby: 1.8.7"
     command: "docker-compose run ree187"
+
+  - wait
+
+  - name: ":shipit:"
+    command: "docker-compose run ruby24 rake release:tag"
+    branches: master
