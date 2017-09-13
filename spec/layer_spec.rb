@@ -90,4 +90,19 @@ RSpec.describe PUUID::Layer do
       expect(uuid1).to_not eql(uuid2)
     end
   end
+
+  describe ".marketplace" do
+    it "returns predictable uuids" do
+      expect(
+        PUUID::Layer.marketplace("marketplace_id")
+      ).to eql("8dff1d72-eb8d-57cc-9ab4-b672ff03f40b")
+    end
+
+    it "returns uuids that vary by input" do
+      uuid1 = PUUID::Layer.marketplace("foo")
+      uuid2 = PUUID::Layer.marketplace("bar")
+
+      expect(uuid1).to_not eql(uuid2)
+    end
+  end
 end
