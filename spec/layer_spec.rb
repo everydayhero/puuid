@@ -95,7 +95,7 @@ RSpec.describe PUUID::Layer do
     it "returns predictable uuids" do
       expect(
         PUUID::Layer.marketplace("marketplace_id")
-      ).to eql("8dff1d72-eb8d-57cc-9ab4-b672ff03f40b")
+      ).to eql("884a70af-b7bd-5b3e-af1e-eefaa3209794")
     end
 
     it "returns uuids that vary by input" do

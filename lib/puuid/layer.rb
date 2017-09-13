@@ -33,7 +33,7 @@ module PUUID
     end
 
     def self.marketplace(marketplace_id)
-      UUID.uuid_v5(MARKETPLACE_NAMESPACE, marketplace_id)
+      URL.uuid_for(MARKETPLACE_NAMESPACE, marketplace_id)
     end
   end
 end
